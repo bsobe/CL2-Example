@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ContraintLayout2</string>
+    <string name="flow_type">FlowType: %1$s</string>
+    <string name="saturation">Saturation:</string>
+    <string name="brightness">Brightness:</string>
+    <string name="contrast">Contrast:</string>
+    <string name="round">Round Percent:</string>
 </resources>

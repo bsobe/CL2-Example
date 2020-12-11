@@ -14,6 +14,7 @@ class FeaturesFragment : Fragment(R.layout.fragment_features) {
     lateinit var buttonLayer: Button
     lateinit var buttonFlow: Button
     lateinit var buttonPlaceholder: Button
+    lateinit var buttonImageFilter: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +26,7 @@ class FeaturesFragment : Fragment(R.layout.fragment_features) {
         buttonLayer = view.findViewById(R.id.buttonLayer)
         buttonFlow = view.findViewById(R.id.buttonFlow)
         buttonPlaceholder = view.findViewById(R.id.buttonPlaceholder)
+        buttonImageFilter = view.findViewById(R.id.buttonImageFilter)
         return view
     }
 
@@ -33,6 +35,7 @@ class FeaturesFragment : Fragment(R.layout.fragment_features) {
         buttonLayer.setOnClickListener { replaceInternalFragment(LayerFragment()) }
         buttonFlow.setOnClickListener { replaceInternalFragment(FlowFragment()) }
         buttonPlaceholder.setOnClickListener { replaceInternalFragment(PlaceholderFragment()) }
+        buttonImageFilter.setOnClickListener { replaceInternalFragment(ImageFilterFragment()) }
     }
 
 }

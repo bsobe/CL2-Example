@@ -59,9 +59,23 @@
         android:lines="2"
         android:minWidth="180dp"
         android:text="Placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonImageFilter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonFlow" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonImageFilter"
+        style="@style/ColorfulButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lines="2"
+        android:minWidth="180dp"
+        android:text="ImageFilter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlaceholder" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

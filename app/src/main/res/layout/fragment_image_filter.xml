@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewImageFilterHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#408283"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageFilter" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImageFilterHeader"
+        app:srcCompat="@drawable/baby_dragon" />
+
+    <TextView
+        android:id="@+id/textViewSaturationTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFilterView"
+        tools:text="Saturation: 50" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarSaturation"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSaturationTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewSaturationTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewSaturationTitle" />
+
+    <TextView
+        android:id="@+id/textViewBrightnessTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSaturationTitle"
+        tools:text="Brightness: 50" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarBrightness"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="@id/textViewBrightnessTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewBrightnessTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewBrightnessTitle" />
+
+    <TextView
+        android:id="@+id/textViewContrastTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBrightnessTitle"
+        tools:text="Contrast: 50" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarContrast"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/textViewContrastTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewContrastTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewContrastTitle" />
+
+    <TextView
+        android:id="@+id/textViewRoundTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewContrastTitle"
+        tools:text="Round: 50" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarRound"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@id/textViewRoundTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewRoundTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewRoundTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
