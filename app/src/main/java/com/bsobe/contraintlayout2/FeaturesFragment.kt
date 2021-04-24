@@ -4,17 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.constraintlayout.helper.widget.Flow
 import androidx.fragment.app.Fragment
-import androidx.transition.TransitionManager
+import com.bsobe.contraintlayout2.features.*
 
 class FeaturesFragment : Fragment(R.layout.fragment_features) {
-
-    lateinit var buttonLayer: Button
-    lateinit var buttonFlow: Button
-    lateinit var buttonPlaceholder: Button
-    lateinit var buttonImageFilter: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,19 +16,23 @@ class FeaturesFragment : Fragment(R.layout.fragment_features) {
     ): View? {
         val view = super.onCreateView(inflater, container, savedInstanceState)
         requireNotNull(view)
-        buttonLayer = view.findViewById(R.id.buttonLayer)
-        buttonFlow = view.findViewById(R.id.buttonFlow)
-        buttonPlaceholder = view.findViewById(R.id.buttonPlaceholder)
-        buttonImageFilter = view.findViewById(R.id.buttonImageFilter)
+        with(view) {
+            findViewById<View>(R.id.buttonSizeProperties)
+                .setOnClickListener { replaceInternalFragment(SizePropertiesFragment()) }
+            findViewById<View>(R.id.buttonPositionProperties)
+                .setOnClickListener { replaceInternalFragment(PositionPropertiesFragment()) }
+            findViewById<View>(R.id.buttonVirtualHelpers)
+                .setOnClickListener { replaceInternalFragment(VirtualHelpersFragment()) }
+            findViewById<View>(R.id.buttonLayer)
+                .setOnClickListener { replaceInternalFragment(LayerFragment()) }
+            findViewById<View>(R.id.buttonFlow)
+                .setOnClickListener { replaceInternalFragment(FlowFragment()) }
+            findViewById<View>(R.id.buttonPlaceholder)
+                .setOnClickListener { replaceInternalFragment(PlaceholderFragment()) }
+            findViewById<View>(R.id.buttonImageFilter)
+                .setOnClickListener { replaceInternalFragment(ImageFilterFragment()) }
+        }
         return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        buttonLayer.setOnClickListener { replaceInternalFragment(LayerFragment()) }
-        buttonFlow.setOnClickListener { replaceInternalFragment(FlowFragment()) }
-        buttonPlaceholder.setOnClickListener { replaceInternalFragment(PlaceholderFragment()) }
-        buttonImageFilter.setOnClickListener { replaceInternalFragment(ImageFilterFragment()) }
     }
 
 }

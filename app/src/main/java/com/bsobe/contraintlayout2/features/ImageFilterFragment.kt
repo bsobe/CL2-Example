@@ -1,16 +1,15 @@
-package com.bsobe.contraintlayout2
+package com.bsobe.contraintlayout2.features
 
-import android.animation.ValueAnimator
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.constraintlayout.helper.widget.Layer
 import androidx.constraintlayout.utils.widget.ImageFilterView
 import androidx.core.text.bold
 import androidx.fragment.app.Fragment
+import com.bsobe.contraintlayout2.R
 
 class ImageFilterFragment : Fragment(R.layout.fragment_image_filter) {
 

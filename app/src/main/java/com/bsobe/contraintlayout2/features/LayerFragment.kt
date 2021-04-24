@@ -1,4 +1,4 @@
-package com.bsobe.contraintlayout2
+package com.bsobe.contraintlayout2.features
 
 import android.animation.ValueAnimator
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.constraintlayout.helper.widget.Layer
 import androidx.fragment.app.Fragment
+import com.bsobe.contraintlayout2.R
 
 class LayerFragment : Fragment(R.layout.fragment_layer) {
 

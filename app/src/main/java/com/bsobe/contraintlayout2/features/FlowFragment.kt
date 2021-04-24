@@ -1,4 +1,4 @@
-package com.bsobe.contraintlayout2
+package com.bsobe.contraintlayout2.features
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.constraintlayout.helper.widget.Flow
 import androidx.fragment.app.Fragment
 import androidx.transition.TransitionManager
+import com.bsobe.contraintlayout2.R
 
 class FlowFragment : Fragment(R.layout.fragment_flow) {
 

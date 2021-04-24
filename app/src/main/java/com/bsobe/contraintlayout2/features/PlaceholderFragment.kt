@@ -1,6 +1,5 @@
-package com.bsobe.contraintlayout2
+package com.bsobe.contraintlayout2.features
 
-import android.animation.LayoutTransition
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,7 @@ import android.widget.Button
 import androidx.constraintlayout.widget.Placeholder
 import androidx.fragment.app.Fragment
 import androidx.transition.TransitionManager
+import com.bsobe.contraintlayout2.R
 
 class PlaceholderFragment : Fragment(R.layout.fragment_placeholder) {
 

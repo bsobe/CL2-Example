@@ -23,18 +23,60 @@
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSizeProperties"
+        style="@style/ColorfulButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:minWidth="180dp"
+        android:text="Size Properties"
+        app:layout_constraintBottom_toTopOf="@id/buttonPositionProperties"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewConstraintFeaturesHeader"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionProperties"
+        style="@style/ColorfulButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lines="2"
+        android:minWidth="180dp"
+        android:text="Position Properties"
+        app:layout_constraintBottom_toTopOf="@id/buttonVirtualHelpers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSizeProperties" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonVirtualHelpers"
+        style="@style/ColorfulButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lines="2"
+        android:minWidth="180dp"
+        android:text="Virtual Helpers"
+        app:layout_constraintBottom_toTopOf="@id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPositionProperties" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLayer"
         style="@style/ColorfulButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:lines="2"
         android:minWidth="180dp"
         android:text="Layer"
         app:layout_constraintBottom_toTopOf="@id/buttonFlow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardViewConstraintFeaturesHeader"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintTop_toBottomOf="@id/buttonVirtualHelpers" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonFlow"
